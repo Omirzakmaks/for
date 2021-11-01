@@ -32,11 +32,37 @@ namespace @for
             }
             Console.WriteLine("K= "+x);
 
+        }
+        static void for3()
+        {
+            Console.Write("A<B, A: ");
+            int k = Convert.ToInt32(Console.ReadLine());
+            Console.Write("B: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int x = 0;
+            for (int i = n; i >k; i--)
+            {
+                Console.Write(i + " ");
+                x++;
+            }
+            Console.WriteLine("K= " + x);
+
+        }
+        static void for4()
+        {
+            Console.Write("double A: ");
+            double k = Convert.ToDouble(Console.ReadLine());
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine($"{i}kg ={ i* k} tenge");
+                
+            }
+            
 
         }
         static void Main(string[] args)
         {
-            for2();
+            for4();
             Console.ReadKey();
         }
     }

@@ -60,9 +60,77 @@ namespace @for
             
 
         }
+        static void for5()
+        {
+            Console.Write("double A: ");
+            double k = Convert.ToDouble(Console.ReadLine());
+            for (double i = 0.1; i <= 1; i=i+0.1)
+            {
+                Console.WriteLine($"{i}kg ={ k*i} tenge");
+
+            }
+
+
+        }
+        static void for6()
+        {
+            Console.Write("double A: ");
+            double k = Convert.ToDouble(Console.ReadLine());
+            for (double i = 1; i <= 2; i = i + 0.2)
+            {
+                Console.WriteLine($"{i}kg ={ k * i} tenge");
+
+            }
+         }
+        static void for7()
+        {
+            Console.Write("A<B int A:");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("A<B int B:");
+            int b = Convert.ToInt32(Console.ReadLine());
+            int sum = 0;
+            for (int i = a; i <= b; i++)
+                sum = sum + i;
+                Console.WriteLine(sum);
+        }
+        static void for9()
+        {
+            Console.Write("A<B int A:");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("A<B int B:");
+            int b = Convert.ToInt32(Console.ReadLine());
+            int  sum = 0;
+            for (int i = a; i <= b; i++)
+            sum += i*i;
+            Console.WriteLine(sum);
+        }
+        static void for8()
+        {
+            Console.Write("A<B int A:");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("A<B int B:");
+            int b = Convert.ToInt32(Console.ReadLine());
+            int sum = 1;
+            for (int i = a; i <= b; i++)
+                sum *=i;
+            Console.WriteLine(sum);
+        }
+        static void for10()
+        {
+            Console.Write("double N: ");
+            int  a = Convert.ToInt32(Console.ReadLine());
+            double sum = 0;
+            for (double i = 1; i <= a; i++)
+            {
+                
+                sum =sum + 1 / i;
+                Console.Write($"+{1/i}");
+            }
+            Console.WriteLine("="+sum);
+        }
         static void Main(string[] args)
         {
-            for4();
+            for10();
             Console.ReadKey();
         }
     }

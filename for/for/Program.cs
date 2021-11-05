@@ -117,7 +117,7 @@ namespace @for
         }
         static void for10()
         {
-            Console.Write("double N: ");
+            Console.Write("int N: ");
             int  a = Convert.ToInt32(Console.ReadLine());
             double sum = 0;
             for (double i = 1; i <= a; i++)
@@ -128,9 +128,83 @@ namespace @for
             }
             Console.WriteLine("="+sum);
         }
+        static void for11()
+        {
+            Console.Write("int N: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            double sum = 0;
+            for (double i = 0; i <= n; i++)
+            {
+                 sum += Math.Pow(n+i,2);
+             }
+            Console.WriteLine("=" + sum);
+        }
+        static void for12()
+        {
+            Console.Write("int N: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            double sum = 1;
+            for (double i = 1.1; i < n; i=i+0.1)
+            {
+                sum *=i;
+                Console.WriteLine(i);
+            }
+            Console.WriteLine("=" + sum);
+        }
+        static void for13()
+        {
+            Console.Write("int N: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            double sum = 0;
+            for (double i = 1; i <= n; i++)
+            {
+                sum += -1*Math.Pow(-1,i)+(-1*Math.Pow(-1,i)*i/10);
+               
+            }
+            Console.WriteLine("=" + sum);
+        }
+        static void for14()
+        {
+            Console.Write("int N: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            double sum = 0;
+            for (double i = 1; i <= n; i=i+2)
+            {
+               sum +=i;
+            }
+            Console.WriteLine("=" + sum);
+        }
+        static void for15()
+        {
+            Console.Write("int A: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("int N: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            double sum = 1;
+            for (double i = 0; i < n;  i++)
+            {
+                sum *=a;
+            }
+            Console.WriteLine("=" + sum);
+        }
+        static void for16()
+        {
+            Console.Write("float A: ");
+            double a = Convert.ToDouble(Console.ReadLine());
+            Console.Write("int N: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            double sum = 1;
+            for (double i = 0; i <= n; i++)
+            {
+                sum = Math.Pow(a,i);
+                Console.WriteLine($"{a}^{i}={sum}");
+            }
+            //Console.WriteLine("=" + sum);
+        }
         static void Main(string[] args)
         {
-            for10();
+           
+            for16();
             Console.ReadKey();
         }
     }
